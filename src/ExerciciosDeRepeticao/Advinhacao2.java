@@ -1,7 +1,9 @@
+package ExerciciosDeRepeticao;
+
 import java.util.Random;
 import java.util.Scanner;
 
-public class AdvinhacaoJogo {
+public class Advinhacao2 {
     public static void main(String[] args) {
         int numeroAleatorio = new Random().nextInt(100);
         int numeroTentativas = 0;
@@ -10,25 +12,20 @@ public class AdvinhacaoJogo {
         Scanner scanner = new Scanner(System.in);
 
         while (numeroTentativas < MAX_TENTATIVAS) {
-            System.out.println("Adivinhe o número que está entre 0 e 100");
+            System.out.println("Advinhe o numero que está entre 0 e 100");
             int numeroUsuario = scanner.nextInt();
             numeroTentativas++;
 
             if (numeroUsuario == numeroAleatorio) {
-                System.out.printf("\nParabéns! Você acertou o número com %d tentativa(s)\n", numeroTentativas);
+                System.out.printf("\nPARABÉNS! Você acertou o número com %d tentativas\n", numeroTentativas);
                 break;
-            } else if (numeroUsuario > numeroAleatorio) {
-                System.out.println("\nO número aleatório é menor.\n");
             } else {
-                System.out.println("\nO número aleatório é maior.\n");
+                System.out.println("Tente novamente!");
             }
         }
-
         if (numeroTentativas == MAX_TENTATIVAS) {
-            System.out.println("Você excedeu o número de tentativas. O número era " + numeroAleatorio);
+            System.out.printf("\nVocê atingiu o número máximo de tentativas. O número era %d.\n", numeroAleatorio);
         }
-
-        System.out.println("\n\nFim de jogo.");
         scanner.close();
     }
 }

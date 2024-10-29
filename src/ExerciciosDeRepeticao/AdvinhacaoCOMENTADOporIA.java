@@ -1,35 +1,38 @@
-package ExerciciosDeRepeticao; // Declara o pacote do código, que é um agrupamento de classes.
+package ExerciciosDeRepeticao; // Declara o pacote onde a classe está armazenada
 
-import java.util.Random; // Importa a classe Random, que permite gerar números aleatórios.
-import java.util.Scanner; // Importa a classe Scanner, que permite a entrada de dados pelo usuário.
+import java.util.Random; // Importa a classe Random para gerar números aleatórios
+import java.util.Scanner; // Importa a classe Scanner para ler a entrada do usuário
 
-public class AdvinhacaoCOMENTADOporIA { // Declara a classe pública Advinhacao1.
-    public static void main(String[] args){ // Método principal, ponto de entrada do programa.
-        int numeroAleatorio = new Random().nextInt(100); // Gera um número aleatório entre 0 e 99 e o atribui a numeroAleatorio.
-        int numeroTentativas = 0; // Inicializa o contador de tentativas em 0.
-        final int MAX_TENTATIVAS = 5; // Define o número máximo de tentativas como 5.
+public class AdvinhacaoCOMENTADOporIA { // Declara a classe principal Advinhacao2
+    public static void main(String[] args) { // Define o método principal que inicia a execução do programa
+        int numeroAleatorio = new Random().nextInt(100); // Gera um número aleatório entre 0 e 99 e armazena em numeroAleatorio
+        int numeroTentativas = 0; // Inicializa o contador de tentativas do usuário
+        final int MAX_TENTATIVAS = 5; // Define o número máximo de tentativas permitidas
 
-        Scanner scanner = new Scanner(System.in); // Cria um objeto Scanner para ler a entrada do usuário.
+        Scanner scanner = new Scanner(System.in); // Cria um objeto Scanner para receber a entrada do usuário
 
-        while (numeroTentativas < MAX_TENTATIVAS){ // Inicia um loop que continua enquanto o número de tentativas for menor que o máximo permitido.
-            System.out.println("Advinhe o numero que está entre 0 e 100"); // Solicita que o usuário adivinhe o número.
-            int numeroUsuario = scanner.nextInt(); // Lê o número fornecido pelo usuário.
-            numeroTentativas++; // Incrementa o contador de tentativas.
+        // Loop que continua enquanto o número de tentativas for menor que o máximo permitido
+        while (numeroTentativas < MAX_TENTATIVAS) {
+            System.out.println("Advinhe o numero que está entre 0 e 100"); // Solicita ao usuário que adivinhe o número
+            int numeroUsuario = scanner.nextInt(); // Lê o número digitado pelo usuário e armazena em numeroUsuario
+            numeroTentativas++; // Incrementa o contador de tentativas
 
-            if(numeroUsuario == numeroAleatorio){ // Verifica se o número do usuário é igual ao número aleatório.
-                System.out.printf("\n Parabens! Voce acertou o numero com %d tentativas \n", numeroTentativas); // Exibe uma mensagem de sucesso e o número de tentativas.
-                break; // Sai do loop caso o usuário acerte o número.
-            } else if (numeroUsuario > numeroAleatorio) { // Verifica se o número do usuário é maior que o número aleatório.
-                System.out.println("\n O numero aleatorio é menor. \n"); // Informa que o número aleatório é menor.
-            } else { // Caso o número do usuário seja menor que o número aleatório.
-                System.out.println ("\n O numero aleatorio é maior. \n"); // Informa que o número aleatório é maior.
+            // Verifica se o número digitado pelo usuário é igual ao número aleatório gerado
+            if (numeroUsuario == numeroAleatorio) {
+                // Exibe uma mensagem de acerto e o número de tentativas usadas
+                System.out.printf("\nPARABÉNS! Você acertou o número com %d tentativas\n", numeroTentativas);
+                break; // Encerra o loop caso o usuário acerte o número
+            } else {
+                System.out.println("Tente novamente!"); // Exibe uma mensagem de erro para o usuário tentar novamente
             }
         }
-        if (numeroTentativas == MAX_TENTATIVAS){ // Verifica se o número de tentativas atingiu o máximo.
-            System.out.println("Voce excedeu o numero de tentativas. O numero era " + numeroAleatorio); // Informa ao usuário que ele excedeu o número de tentativas e revela o número aleatório.
+
+        // Verifica se o usuário atingiu o número máximo de tentativas sem acertar
+        if (numeroTentativas == MAX_TENTATIVAS) {
+            // Exibe uma mensagem informando o número correto após o usuário esgotar as tentativas
+            System.out.printf("\nVocê atingiu o número máximo de tentativas. O número era %d.\n", numeroAleatorio);
         }
 
-        System.out.println("\n \n Fim de jogo."); // Exibe uma mensagem de fim de jogo.
-        scanner.close(); // Fecha o objeto Scanner para liberar os recursos.
+        scanner.close(); // Fecha o objeto Scanner para liberar o recurso
     }
 }
