@@ -1,8 +1,8 @@
-
 # Jogo de Adivinhação em Java
 
-Este é um simples jogo de adivinhação em Java, onde o usuário tenta adivinhar um número aleatório gerado pelo programa. O número está entre 0 e 99, e o jogador tem um máximo de 5 tentativas para acertá-lo. O jogo fornece dicas sobre se o palpite é maior ou menor do que o número aleatório.
-
+Este é um simples jogo de adivinhação em Java, onde o usuário tenta adivinhar um número aleatório gerado pelo programa.
+O número está entre 0 e 99, e o jogador tem um máximo de 5 tentativas para acertá-lo. O jogo fornece dicas sobre se o
+palpite é maior ou menor do que o número aleatório.
 
 ## Funcionalidades
 
@@ -21,29 +21,37 @@ Este é um simples jogo de adivinhação em Java, onde o usuário tenta adivinha
 1. Clone o repositório:
 
 Copiar código:
+
  ```bash
 git clone https://github.com/ChristopherADS/estudandoJavaout2024
 cd jogo-adivinhacao
 ```
+
 2. Compile o código:
 
-Abra seu terminal ou prompt de comando, navegue até o diretório onde o arquivo Advinhacao1.java está localizado e execute:
+Abra seu terminal ou prompt de comando, navegue até o diretório onde o arquivo Advinhacao1.java está localizado e
+execute:
+
  ```bash
   javac Advinhacao1.java
 ```
+
 3. Execute o programa:
 
 Após a compilação, execute o programa com o comando:
+
 ```bash
 java Advinhacao1
 ```
+
 4. Siga as instruções na tela para jogar!
 
 ## Estrutura do Código
 
-- Pacote: `ExerciciosDeRepeticao`
+- Pacote: `AdvinhacaoExerciciosDeRepeticao`
 - Classe Principal: `Advinhacao1`
 - Método Principal: `main(String[] args)`
+
 ## Lógica do Jogo
 
 1. Gera um número aleatório.
@@ -52,4 +60,6 @@ java Advinhacao1
 4. Exibe mensagens finais ao usuário com o resultado do jogo.
 
 ## Contribuiçoes
-Sinta-se à vontade para contribuir com melhorias ou correções. Você pode abrir uma issue ou fazer um `pull request` no repositório.
+
+Sinta-se à vontade para contribuir com melhorias ou correções. Você pode abrir uma issue ou fazer um `pull request` no
+repositório.

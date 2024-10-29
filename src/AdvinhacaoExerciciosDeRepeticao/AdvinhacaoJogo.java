@@ -1,4 +1,4 @@
-package ExerciciosDeRepeticao;
+package AdvinhacaoExerciciosDeRepeticao;
 
 import java.util.Random;
 import java.util.Scanner;

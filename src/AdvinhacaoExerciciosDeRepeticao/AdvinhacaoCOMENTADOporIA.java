@@ -1,4 +1,4 @@
-package ExerciciosDeRepeticao; // Declara o pacote onde a classe está armazenada
+package AdvinhacaoExerciciosDeRepeticao; // Declara o pacote onde a classe está armazenada
 
 import java.util.Random; // Importa a classe Random para gerar números aleatórios
 import java.util.Scanner; // Importa a classe Scanner para ler a entrada do usuário
