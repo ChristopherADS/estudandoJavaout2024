@@ -15,8 +15,8 @@ Exercícios que envolvem leitura de dados do usuário. Aqui estão incluídos ex
 ### 📂 Loop
 Exercícios de repetição utilizando estruturas de loop (`for`, `while`, `do-while`). São exemplos práticos para entender o funcionamento e as melhores práticas de iteração em Java.
 
-### 📂 Main
-A pasta `Main` contém o ponto de entrada de cada exercício, que pode incluir métodos `main` independentes para testar diferentes funcionalidades. É a estrutura inicial de execução para cada exemplo.
+### 📂 Principal
+A pasta `Principal` contém o ponto de entrada de cada exercício, que pode incluir métodos `main` independentes para testar diferentes funcionalidades. É a estrutura inicial de execução para cada exemplo.
 
 ### 📂 OutroLoop
 Mais exemplos de loops, com foco em exercícios adicionais e práticas avançadas em laços de repetição, visando situações comuns e desafiadoras em programação.
